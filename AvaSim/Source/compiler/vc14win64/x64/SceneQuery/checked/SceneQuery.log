@@ -1,0 +1,11 @@
+﻿  SqAABBPruner.cpp
+  SqAABBTree.cpp
+  SqAABBTreeUpdateMap.cpp
+  SqBounds.cpp
+  SqBucketPruner.cpp
+  SqExtendedBucketPruner.cpp
+  SqMetaData.cpp
+  SqPruningPool.cpp
+  SqPruningStructure.cpp
+  SqSceneQueryManager.cpp
+  SceneQuery.vcxproj -> F:\PhysX-3.4\PhysX_3.4\Source\compiler\vc14win64\./../../../Lib/vc14win64\SceneQueryCHECKED.lib
