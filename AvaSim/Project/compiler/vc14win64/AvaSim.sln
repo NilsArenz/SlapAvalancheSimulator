@@ -2,10 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnippetUtils", "SnippetUtils.vcxproj", "{F44672D8-5198-BBA4-87E8-C790415E403C}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnippetRender", "SnippetRender.vcxproj", "{43554530-2170-F5A9-4794-3AD09344F18D}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AvaSim", "AvaSim.vcxproj", "{B2817996-FAFC-5EC2-B600-92D86C7063CE}"
 EndProject
 Global
@@ -20,30 +16,6 @@ Global
 		release|x86 = release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.checked|x64.ActiveCfg = checked|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.checked|x64.Build.0 = checked|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.checked|x86.ActiveCfg = checked|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.debug|x64.ActiveCfg = debug|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.debug|x64.Build.0 = debug|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.debug|x86.ActiveCfg = debug|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.profile|x64.ActiveCfg = profile|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.profile|x64.Build.0 = profile|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.profile|x86.ActiveCfg = profile|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.release|x64.ActiveCfg = release|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.release|x64.Build.0 = release|x64
-		{F44672D8-5198-BBA4-87E8-C790415E403C}.release|x86.ActiveCfg = release|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.checked|x64.ActiveCfg = checked|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.checked|x64.Build.0 = checked|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.checked|x86.ActiveCfg = checked|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.debug|x64.ActiveCfg = debug|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.debug|x64.Build.0 = debug|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.debug|x86.ActiveCfg = debug|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.profile|x64.ActiveCfg = profile|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.profile|x64.Build.0 = profile|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.profile|x86.ActiveCfg = profile|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.release|x64.ActiveCfg = release|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.release|x64.Build.0 = release|x64
-		{43554530-2170-F5A9-4794-3AD09344F18D}.release|x86.ActiveCfg = release|x64
 		{B2817996-FAFC-5EC2-B600-92D86C7063CE}.checked|x64.ActiveCfg = checked|x64
 		{B2817996-FAFC-5EC2-B600-92D86C7063CE}.checked|x64.Build.0 = checked|x64
 		{B2817996-FAFC-5EC2-B600-92D86C7063CE}.checked|x86.ActiveCfg = checked|x64

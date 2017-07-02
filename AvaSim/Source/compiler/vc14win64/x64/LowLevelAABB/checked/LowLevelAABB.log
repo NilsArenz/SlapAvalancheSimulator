@@ -1,8 +1,0 @@
-﻿  BpBroadPhase.cpp
-  BpBroadPhaseMBP.cpp
-  BpBroadPhaseSap.cpp
-  BpBroadPhaseSapAux.cpp
-  BpMBPTasks.cpp
-  BpSAPTasks.cpp
-  BpSimpleAABBManager.cpp
-  LowLevelAABB.vcxproj -> F:\PhysX-3.4\PhysX_3.4\Source\compiler\vc14win64\./../../../Lib/vc14win64\LowLevelAABBCHECKED.lib

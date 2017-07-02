@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\Headerfiles\Render.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headerfiles\Camera.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headerfiles\SnowpackGenerator.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headerfiles\SimulationProperties.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headerfiles\TerrainGenerator.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headerfiles\MeshData.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headerfiles\CUDASimulationProperties.h">
+      <Filter>Headerfiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headerfiles">
+      <UniqueIdentifier>{e91ae297-38ec-45bd-be18-926c5dde10c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sourcefiles">
+      <UniqueIdentifier>{ebcd8f61-e055-4568-9110-099c8461b7cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sourcefiles\AvaSimRender.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\Camera.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\ClassicMain.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\CUDASimulationProperties.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\Render.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\SimulationProperties.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\SnowpackGenerator.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\TerrainGenerator.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sourcefiles\AvaSim.cpp">
+      <Filter>Sourcefiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

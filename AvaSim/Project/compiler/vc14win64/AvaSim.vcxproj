@@ -23,6 +23,7 @@
     <RootNamespace>
     </RootNamespace>
     <ProjectName>AvaSim</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
@@ -108,12 +109,13 @@
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
     <OutDir>./../../../bin/vc14win64\</OutDir>
-    <IntDir>./x64/SnippetHelloGRB/checked\</IntDir>
+    <IntDir>./x64/AvaSim/checked\</IntDir>
     <TargetExt>.exe</TargetExt>
     <TargetName>$(ProjectName)CHECKED</TargetName>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
     <CodeAnalysisRuleAssemblies />
+    <IncludePath>C:\Users\Nils Arenz\Desktop\SlapAvalancheSimulator-master\SlapAvalancheSimulator-master\AvaSim\Include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
     <ClCompile>
@@ -124,7 +126,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <AdditionalOptions>/MP /Wall /wd4514 /wd4820 /wd4127 /wd4710 /wd4711 /wd4435 /wd4577 /wd4464 /wd4350 /wd4668 /wd4365 /wd4548 /d2Zi+</AdditionalOptions>
       <Optimization>Full</Optimization>
-      <AdditionalIncludeDirectories>./../../../Include;./../../../../PxShared/include;./../../../../PxShared/src/foundation/include;./../../../../PxShared/src/fastxml/include;./../../Graphics/include/win32/GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nils Arenz\Desktop\SlapAvalancheSimulator-master\SlapAvalancheSimulator-master\AvaSim\Include;C:\Users\Nils Arenz\Desktop\SlapAvalancheSimulator-master\SlapAvalancheSimulator-master\AvaSim\Project\Headerfiles;./../../../../PxShared/include;./../../../../PxShared/src/foundation/include;./../../../../PxShared/src/fastxml/include;./../../Graphics/include/win32/GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_HAS_EXCEPTIONS=0;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PHYSX_PROFILE_SDK;RENDER_SNIPPET;NDEBUG;PX_CHECKED=1;PX_NVTX=1;PX_SUPPORT_PVD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <WarningLevel>Level4</WarningLevel>
@@ -134,12 +136,13 @@
       </PrecompiledHeaderFile>
       <ProgramDataBaseFileName>$(TargetDir)\$(TargetName).pdb</ProgramDataBaseFileName>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <AdditionalOptions>/LIBPATH:../../../Lib/vc14win64 PhysX3CommonCHECKED_x64.lib PhysX3CHECKED_x64.lib PhysX3CookingCHECKED_x64.lib PhysX3CharacterKinematicCHECKED_x64.lib PhysX3ExtensionsCHECKED.lib PhysX3VehicleCHECKED.lib PxTaskCHECKED_x64.lib PxCudaContextManagerCHECKED_x64.lib PxFoundationCHECKED_x64.lib PsFastXmlCHECKED_x64.lib PxPvdSDKCHECKED_x64.lib /LIBPATH:../../lib/vc14win64 SnippetUtilsCHECKED.lib</AdditionalOptions>
       <AdditionalDependencies>Winmm.lib;OpenGL32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)CHECKED.exe</OutputFile>
-      <AdditionalLibraryDirectories>./../../../Common/lib/vc14win64;./../../lib/vc14win64;./../../../../PxShared/lib/vc14win64;./../../Graphics/lib/win64/glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>./../../../Common/lib/vc14win64;./../../lib/vc14win64;./../../Graphics/lib/win64/glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
@@ -154,6 +157,9 @@
       <Command>XCOPY "../../../../PxShared/bin\vc14win64\PxFoundationCHECKED_x64.dll" "$(OutDir)" /D /Y
  XCOPY "../../../../PxShared/bin\vc14win64\PxPvdSDKCHECKED_x64.dll" "$(OutDir)" /D /Y</Command>
     </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
     <OutDir>./../../../bin/vc14win64\</OutDir>
@@ -254,24 +260,24 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\SnippetCommon\ClassicMain.cpp">
-    </ClCompile>
+    <ClInclude Include="..\..\Headerfiles\Camera.h" />
+    <ClInclude Include="..\..\Headerfiles\CUDASimulationProperties.h" />
+    <ClInclude Include="..\..\Headerfiles\MeshData.h" />
+    <ClInclude Include="..\..\Headerfiles\Render.h" />
+    <ClInclude Include="..\..\Headerfiles\SimulationProperties.h" />
+    <ClInclude Include="..\..\Headerfiles\SnowpackGenerator.h" />
+    <ClInclude Include="..\..\Headerfiles\TerrainGenerator.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\SnippetHelloGRB\AvaSim.cpp">
-    </ClCompile>
-    <ClCompile Include="..\..\SnippetHelloGRB\AvaSimRender.cpp">
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="./SnippetUtils.vcxproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="./SnippetRender.vcxproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
+    <ClCompile Include="..\..\Sourcefiles\AvaSim.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\AvaSimRender.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\Camera.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\ClassicMain.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\CUDASimulationProperties.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\Render.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\SimulationProperties.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\SnowpackGenerator.cpp" />
+    <ClCompile Include="..\..\Sourcefiles\TerrainGenerator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
